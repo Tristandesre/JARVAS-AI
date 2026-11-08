@@ -1,0 +1,7 @@
+{
+  "name": "JARVAS AI - Motion Transfer & Video Generation Platform",
+  "description": "AI-powered dance motion transfer and video generation studio. Transfer choreographic movements from any reference dance video onto a single photograph.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

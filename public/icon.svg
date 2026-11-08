@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07080d"/>
+      <stop offset="50%" stop-color="#0f111e"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </linearGradient>
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with safe margin -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="106" fill="none" stroke="rgba(168, 85, 247, 0.3)" stroke-width="3"/>
+
+  <!-- Glowing motion ring -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="rgba(56, 189, 248, 0.15)" stroke-width="2"/>
+  <circle cx="256" cy="256" r="130" fill="none" stroke="rgba(168, 85, 247, 0.2)" stroke-width="1.5" stroke-dasharray="8 6"/>
+
+  <!-- Stylized Biomechanical Motion Dancer Emblem -->
+  <!-- Head -->
+  <circle cx="256" cy="150" r="28" fill="url(#neonCyan)" filter="url(#glow)"/>
+  
+  <!-- Spine and Dynamic Torso -->
+  <path d="M256 182 L256 265 L225 330 L200 405" fill="none" stroke="url(#neonPurple)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M256 265 L285 330 L320 395" fill="none" stroke="url(#neonCyan)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- Expressive Dynamic Arms & Hands -->
+  <path d="M256 205 L175 190 L125 245" fill="none" stroke="url(#neonCyan)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  <path d="M256 205 L335 180 L395 140" fill="none" stroke="url(#neonPurple)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+
+  <!-- Joint Keypoint Dots -->
+  <circle cx="175" cy="190" r="8" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="125" cy="245" r="7" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="335" cy="180" r="8" fill="#ffffff" filter="url(#glow)"/>
+  <circle cx="395" cy="140" r="7" fill="#c084fc" filter="url(#glow)"/>
+  <circle cx="225" cy="330" r="8" fill="#c084fc" filter="url(#glow)"/>
+  <circle cx="285" cy="330" r="8" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="200" cy="405" r="7" fill="#38bdf8" filter="url(#glow)"/>
+  <circle cx="320" cy="395" r="7" fill="#c084fc" filter="url(#glow)"/>
+
+  <!-- Brand Subtext -->
+  <text x="256" y="460" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="28" fill="#ffffff" text-anchor="middle" letter-spacing="4">JARVAS AI</text>
+</svg>
